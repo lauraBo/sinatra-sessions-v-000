@@ -21,7 +21,7 @@ class App < Sinatra::Base
   get '/set' do
     # set the :foo key of the session hash equal to 'hello' here! get '/set', write a line of code that sets the :foo key of the session hash equal to 'hello'.
     
-    session[:foo] == 'hello'
+    session[:foo] = 'hello'
     
 
     if session[:foo] == 'hello'
